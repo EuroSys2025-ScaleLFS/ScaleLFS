@@ -6,7 +6,7 @@
 ```bash
 cd ScaleLFS
 make
-
+```
 * RLW module can be found at ScaleLFS/scalelfs.ko
 
 ## Build mkfs
@@ -17,9 +17,10 @@ cd ScaleLFS/f2fs-tools
 ./autogen.sh
 ./configure
 make
-
+```
 ## Usage (example for mounting /dev/nvme0n1 to directory /mnt with 32 DGCs)
 ```bash
 sudo insmod ScaleLFS/scalelfs.ko num_gc_thread=32
 sudo ScaleLFS/f2fs-tools/mkfs/mkfs.f2fs /dev/nvme0n1
 mount -t f3fs /dev/nvme0n1 /mnt -o lfs
+```
