@@ -10,8 +10,6 @@ make
 * RLW module can be found at ScaleLFS/scalelfs.ko
 
 ## Build mkfs
-* Prepare mkfs module in f2fs-tools with "git submodule"
-
 ```bash
 cd ScaleLFS/f2fs-tools
 ./autogen.sh
